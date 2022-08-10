@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Carrera Programmer - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,700&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/321e54ee43.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+
+    <!--HERE NAVBAR STARTS-->
+
+    <section class="navbar-container" id="navbar">
+      <div class="logo-container" <p class="logo">Carrera<i class="fa-solid fa-circle-dot"></i>Programmer</p>
+      </div>
+      <nav>
+<input type="checkbox" id="menu-toggle" />
+
+        <ul class="menu" id="trick-menu">
+
+          <li class="menu-content">
+            <a href="#about-me" class="nav-links">About me</a>
+          </li>
+          <li class="menu-content">
+            <a href="#projects" class="nav-links">Projects</a>
+          </li>
+          <li class="menu-content">
+            <a href="#contact" class="nav-links">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <label for="menu-toggle" class="btn-menu" />
+      <i class="fa-solid fa-ellipsis"></i>
+      </label>
+    </section>
+
+    <!--HERE NAVBAR ENDS-->
+
+    <!--HERE START WELCOME SECTION -->
+
+    <section class="welcome-section" id="welcome-section">
+
+      <div class="welcome-text">
+        <h1> <span class="first-letter">H</span>ey, I'm <span class="first-letter">D</span>aniel <span class="first-letter">C</span>arrera</h1>
+        <p> the one who can <span class="important">print</span> your <span class="important">dreams</span> on a webpage</p>
+      </div>
+    </section>
+
+    <!--HERE WELCOME SECTION ENDS-->
+
+  </header>
+
+  <!--HERE STARTS ABOUT ME SECTION-->
+  <div id="about-me">
+
+    <section class="about-me">
+
+      <div class="about-me-text">
+        <h1> <span class="first-letter">W</span>ho am <span class="first-letter">I</span>?</h1>
+        <p>Accidentally I discovered that I love programming. Now, I will do all necessary to become the best programmer I have ever dreamed of. My objective in life is to apport with my knowledge a bit of value in people's lives. 
+If you have an idea, we can make this reality. I'm a software engineer student and I'm specializing to become a full-stack develope </p>
+
+      </div>
+      <div class="about-me-img">
+        <img src="https://i.pinimg.com/564x/64/1f/94/641f945a943369378110b8812f3dfa13.jpg" alt="">
+      </div>
+
+    </section>
+  </div>
+  <!--HERE ABOUT ME SECTION ENDS-->
+
+  <!--HERE STARTS PROJECTS SECTION-->
+  <section class="projects" id="projects">
+
+    <div class="project-container">
+      <h1>These <span class="first-letter">A</span>re Some of My <span class="first-letter">P</span>rojects...</h1>
+      <div class="project-grid">
+
+        <!-- FIRST PRODUCT-->
+
+        <div class="project-tile">
+
+          <a href="#" class="project-link">
+            <div class="project-title">
+              <p>Balenciaga Product Page</p>
+            </div>
+            <div class="project-img"><img src="https://i.pinimg.com/564x/92/5e/4c/925e4c8312ce0df5344ad5ec70552db4.jpg" alt=""></div>
+          </a>
+          <div class="project-btn"> <button type="button" name="button">See project</button></div>
+
+        </div>
+
+        <!--SECOND PROJECT-->
+
+        <div class="project-tile">
+
+          <a href="#" class="project-link">
+            <div class="project-title">
+              <p>Moneta Coffee Shop E-commerce</p>
+            </div>
+            <div class="project-img"><img src="https://i.pinimg.com/originals/27/67/fc/2767fc3d926540202b50f34ff93d84ec.jpg" alt=""></div>
+          </a>
+          <div class="project-btn"> <button type="button" name="button">See project</button></div>
+
+        </div>
+        <!--THIRD PROJECT-->
+
+        <div class="project-tile">
+
+          <a href="#" class="project-link">
+            <div class="project-title">
+              <p>NAP cosmetics E-commerce</p>
+            </div>
+            <div class="project-img"><img src="https://i.pinimg.com/originals/62/e4/14/62e414ac641aa9becb946e599603cf96.jpg" alt=""></div>
+          </a>
+          <div class="project-btn"> <button type="button" name="button">See project</button></div>
+
+        </div>
+
+      </div>
+
+      <a href="https://www.freecodecamp.org/fccde5c1dbd-ac5b-4ee7-91c7-386adbe10dcd" target="_blank" id="profile-link"><button type="button" name="show-more" id="show-more">Show More</button></a>
+
+    </div>
+  </section>
+
+
+  <!--HERE PROJECTS SECTION ENDS-->
+
+  <!--HERE CONTACT SECTION STARTS-->
+  <section class="contact" id="contact">
+    <form id="contact-form">
+      <h2><span class="first-letter">C</span>ontact <span class="first-letter">M</span>e</h2>
+      <div class="form-group">
+        <label id="label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label id="label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+        <div class="form-group">
+          <p>I'm always interested to hear about new projects, please send me a messaje</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="btn-container">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+    </form>
+  </section>
+
+</body>
+
+</html>
