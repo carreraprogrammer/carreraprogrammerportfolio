@@ -1,0 +1,534 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+  }
+  :root{
+    --black: #26220E;
+    --wine: #730D15;
+    --red: #f20519;
+    --gray1: #595959;
+    --gray2: #262626;
+    --white: #f4f5f0;
+    }
+  html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body{
+    font-family: 'Lato', sans-serif;
+    height: 300vh;
+    width: 100%;
+  }
+  html, body{
+    width: 100%;
+    height: 100%;
+  }
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track{
+    background: var(--gray1);
+  }
+  ::-webkit-scrollbar-thumb{
+    background:var(--black);
+    border: 2px solid var(--wine);
+    border-radius: 5px;
+  }
+  
+  
+  /* HERE START NAVBAR CUSTOMITATION */
+  
+  .navbar-container{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    background-color: var(--black);
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--wine);
+  }
+  .logo-container{
+    display: flex;
+    flex-basis: 50%;
+    margin-left: 3%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    color: var(--white);
+    cursor:pointer;
+    transition: all 0.3s;
+  }
+  .logo-container i{
+    font-size: 8px;
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
+    color: var(--wine);
+  }
+  .logo-container p{
+    margin:auto;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .logo-container:hover{
+    font-size: 21px;
+  }
+  .logo-container i:hover{
+    color: var(--red);
+  }
+  nav{
+    flex-basis: 50%;
+    margin-right: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .menu-content{
+    list-style: none;
+    transition: all 0.3s;
+  }
+  .nav-links{
+    text-decoration: none;
+    color: var(--white);
+  
+  }
+  .menu-content:hover{
+    transform: scale(1.2);
+  }
+  .nav-links:hover{
+    font-weight: bold;
+    color: var(--wine);
+  }
+  
+  /*HERE NAVBAR CUSTOMITATION ENDS*/
+  
+  /*HERE WELCOME SECTION CUSTOMITATION START*/
+  
+  .welcome-section{
+    width: 100%;
+    height: 100vh;
+    color:var(--white);
+    background-color: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    animation: gradient 15s ease infinite;
+  }
+  body{
+    background: linear-gradient(
+      -45deg,
+      var(--wine),
+      var(--black),
+      var(--black),
+      var(--gray1),
+      var(--gray2),
+      var(--black),
+      var(--black),
+      var(--wine),
+      var(--wine),
+      var(--black)
+      );
+    background-size: 400% 1000%;
+    animation: gradient 30s ease infinite;
+    background-repeat: no-repeat;
+  }
+  @keyframes gradient{
+    0% {
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+  .welcome-text{
+    width: 100%;
+  }
+  .welcome-text h1{
+    padding: 15px;
+    font-size: 3.8rem;
+  }
+  .first-letter{
+    color: var(--wine);
+    font-size: 4.3rem;
+    font-weight: bolder;
+    }
+    .important{
+      color: var(--wine);
+      font-weight: bolder;
+    }
+  .welcome-text p{
+    font-size: 1.7rem;
+    font-style: italic;
+  }
+  /*HERE WELCOME SECTION ENDS*/
+  
+  /*HERE START ABOUT SECTION*/
+  
+  #about-me{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .about-me{
+    height: 80vh;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    background-color: var(--white);
+    border: 3px solid var(--wine);
+  
+  }
+  .about-me-text{
+    flex-basis: 50%;
+    margin: 50px;
+    color: var(--black);
+  }
+  .about-me-text h1{
+    padding-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  .about-me-text .first-letter{
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .about-me-text p{
+    font-size: 1.1rem;
+  }
+  .about-me-img{
+    flex-basis: 50%;
+    text-align: center;
+  }
+  .about-me-img img{
+    width: 75%;
+    height: auto;
+  }
+  
+  /*HERE ABOUT SECTION ENDS*/
+  
+  /*HERE START PROJECTS SECTION*/
+  .projects{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .project-container{
+    padding: 3em;
+    align-items: center;
+    text-align: center;
+    background-color: var(--black);
+    height: 80vh;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 2px solid var(--wine);
+    display: block;
+  
+  }
+  .project-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+  }
+  .project-tile{
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0px 10px 5px var(--gray1);
+    display: block;
+    border: 1px solid var(--wine);
+  }
+  .project-title{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    align-items: center;
+    padding: 20px;
+  
+  }
+  .project-link{
+    text-decoration: none;
+    color:var(--black);
+  }
+  .project-container h1{
+    padding-bottom: 3%;
+    color: var(--white);
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .project-container h1 .first-letter{
+    font-size: 2.8rem;
+  }
+  .project-tile img{
+    max-width: 90%;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+    height: auto;
+  }
+  .project-img{
+    width: 100%;
+    transition: all 0.3 s;
+  }
+  .project-img img:hover{
+    border: 3px solid var(--wine);
+    transform: scale(1.1);
+  }
+  .project-tile button{
+    padding: 5px 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+    width: 90%;
+    height: 40px;
+    margin-top:20px;
+  }
+  .project-tile button:hover{
+    transform: scale(1.1);
+    border: 1px solid var(--wine);
+    color: var(--wine);
+    font-weight: bold;
+    max-width: 100%;
+  }
+  #show-more{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 30%;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3 s;
+  
+  }
+  #show-more:hover{
+    transform: scale(1.2);
+    border: 2px solid var(--wine);
+    font-weight: bold;
+    color: var(--wine);
+  }
+  /* HERE PROJECTS SECTION ENDS */
+  
+  /* HERE CONTACT SECTION STARTS*/
+  
+  .contact{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .contact form{
+    height: 80vh;
+    background-color: var(--gray2);
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 3px solid var(--wine);
+    text-align: center;
+    font-size: 1rem;
+    color: var(--white);
+  
+  }
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--wine);
+    color: var(--white);
+    font-size: 1.2rem;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    height: 50px;
+    transition: all 0.4s;
+    border: 1px solid var(--white);
+  }
+  .submit-button:hover{
+    transform: scale(1.1);
+    color: var(--black);
+    background-color: var(--white);
+    border: 3px solid var(--wine);
+    color: var(--wine);
+  }
+  .input-textarea {
+    min-height: 90px;
+    width: 80%;
+    padding: 0.625rem;
+    resize: vertical;
+    margin-top: 1.5%;
+    text-align: center;
+  }
+  .form-control {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+    height:1.8rem;
+    text-align: center;
+  }
+  .form-control:focus {
+    border-color: var(--wine);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  .btn-container{
+    width: 100%;
+    display: flex;
+    text-align: center;
+  =
+  }
+  #contact-form h2{
+  font-size: 2rem;
+  padding: 20px;
+  font-weight: bolder;
+  }
+  #contact-form .first-letter{
+  font-size:2.3rem;
+  }
+  /*HERE START RESPONSIVE DESIGN*/
+  #menu-toggle{
+    display: none;
+  }
+  .btn-menu{
+    display: none;
+  }
+  @media (max-width: 768px){
+    ul{
+      flex-direction: column;
+      background-color: var(--gray1);
+      opacity: 80%;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height: 30vh;
+      top: -100vh;
+      overflow-y: auto;
+      transition: all .5s;
+      text-align: center;
+      display: flex;
+    }
+    li{
+      border: 1px solid var(--white);
+      height: 33%;
+      text-align: center;
+      width: 100%;
+      position: static;
+      display: flex;
+      align-items: center;
+    }
+    .nav-links{
+      width: 100%;
+    }
+    .menu-content:hover{
+      transform: scale(1.0);
+    }
+    .nav-links:hover{
+      font-weight: bold;
+      color: var(--wine);
+    }
+  
+    .btn-menu{
+      display: flex;
+      color: var(--white);
+      padding-right: 30px;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    .btn-menu:hover{
+      color: var(--wine);
+      transform: scale(1.1);
+    }
+    #menu-toggle:checked ~ #trick-menu{
+      top: 60px;
+      }
+  
+    .about-me {
+      display: block;
+    }
+    .about-me-img{
+      display: flex;
+      margin-top: -4%;
+    }
+    .about-me-img img{
+      width: auto;
+      height: 30vh;
+      margin: auto;
+    }
+    .about-me-text p{
+      font-size: 1rem;
+      height: 30%;
+  
+    }
+    .about-me-text h1{
+      width: 100%;
+      text-align: center;
+    }
+    .project-container{
+      width: 100%;
+  
+    }
+    .project-grid{
+      overflow-y: auto;
+      overflow-x: auto;
+      max-width: 350px;
+      max-height: 370px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .project-tile{
+      scroll-behavior: auto;
+      height: auto;
+      padding-top: 15px;
+      width: 89.5%;
+    }
+    #show-more{
+      height: 35px;
+      margin: 5%;
+      background-color: var(--wine);
+      border: 1px solid var(--white);
+      color: var(--white)
+    }
+    #show-more:hover{
+      background-color: var(--white);
+    }
+    .project-container h1{
+      padding: 20px;
+      color: var(--white);
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .project-container h1 .first-letter{
+      font-size: 1.7rem;
+    }
+    #contact-form h2{
+    font-size: 2rem;
+    padding-bottom: 3%;
+    font-weight: bolder;
+    }
+    #contact-form .first-letter{
+    font-size:2.3rem;
+    }
+    .submit-button{
+      margin-top: 3%;
+    }
+    .form-group p{
+    margin-left: 10%;
+    margin-right: 10%;
+    }
+  }
+  
