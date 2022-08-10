@@ -3,10 +3,10 @@
     padding: 0;
   }
   :root{
-    --black: #26220E;
+    --black: black;
     --wine: #730D15;
     --red: #f20519;
-    --gray1: #595959;
+    --gray1: gray;
     --gray2: #262626;
     --white: #f4f5f0;
     }
@@ -123,18 +123,17 @@
   body{
     background: linear-gradient(
       -45deg,
+      var(--red),
       var(--wine),
-      var(--black),
       var(--black),
       var(--gray1),
       var(--gray2),
       var(--black),
-      var(--black),
-      var(--wine),
-      var(--wine),
-      var(--black)
+      var(--red),
+      var(--wine)
+     
       );
-    background-size: 400% 1000%;
+    background-size: 500% 1000%;
     animation: gradient 30s ease infinite;
     background-repeat: no-repeat;
   }
@@ -158,6 +157,7 @@
   }
   .first-letter{
     color: var(--wine);
+    border: 3px solid var(--white);
     font-size: 4.3rem;
     font-weight: bolder;
     }
@@ -404,7 +404,7 @@
   }
   .btn-menu{
     display: none;
-  }
+  } 
   @media (max-width: 768px){
     ul{
       flex-direction: column;
